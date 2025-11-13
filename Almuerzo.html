@@ -17,42 +17,44 @@
   <!-- Facebook metadata -->
   <meta property="og:image:width" content="279">
   <meta property="og:image:height" content="279">
-  <meta property="og:title" content="Metrowest | Registros">
-  <meta property="og:description" content="Trabajando por la congregación">
-  <meta property="og:url" content="https://metrowest.github.io/Visita/index.html">
+  <meta property="og:description"
+    content="Esta aplicacion le presenta el plan de emergencias y algunas herramientas para el servicio.">
+  <meta property="og:title" content="Metrowest Service">
   <meta property="og:image" content="https://github.com/Metrowest/Visita/raw/main/public/assets/img/pastoreo55.webp">
 
+  <meta property="og:url" content="https://metrowest.github.io/Service/">
+
+  <!-- Boxicons CDN Link Nav var pequwno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Guide" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
   <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
   <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
   <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="apple-mobile-web-app-title" content="Metrowest | Visita">
-  <meta name="application-name" content="Metrowest | Visita">
   <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="icon" href="assets/icons/icon_24.png" type="image/x-icon">
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
 
-  <link rel="manifest" href="manifest.json">
 
-  <link href="src/global.css" rel="stylesheet">
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
 
-  <script type="module" src="src/script/pages/app-index.js"></script>
-
-  <!-- Top arow CDN Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <!-- Top arow CDN Link -->
-
-  <!-- .stellarnav required -->
-  <link rel="stylesheet" type="text/css" media="all" href="src/appstyle.css">
-  <!-- .stellarnav required -->
-
-  <!-- Rotacion css -->
-  <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-  <!-- Rotacion css -->
+  <script type="module" href="/src/app-index.ts"></script>
 
   <!-- required -->
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
@@ -60,6 +62,19 @@
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/style.css">
   <!-- required -->
 
+  <!--SW-->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/Service/sw.js',
+        { scope: '/Service/' }
+      )
+    }
+  </script>
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
 </head>
 
 <body>
