@@ -20,8 +20,7 @@
   <meta property="og:title" content="Metrowest | Registros">
   <meta property="og:description" content="Trabajando por la congregación">
   <meta property="og:url" content="https://metrowest.github.io/Visita/index.html">
-  <meta property="og:image"
-    content="https://github.com/Metrowest/Visita/raw/main/assets/img/pastoreo55.webp">
+  <meta property="og:image" content="https://github.com/Metrowest/Visita/raw/main/public/assets/img/pastoreo55.webp">
 
   <!-- Imports an icon to represent the document. -->
   <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
@@ -73,7 +72,7 @@
           Registros
         </a>
       </li>
-            <li>
+      <li>
         <a href="Actividad.html">
           <i><img title="android" class="img6" src="public/assets/img/precursor5.png"></i>
           Actividad<br>Semanal
@@ -162,7 +161,7 @@
         <img title="header2" class="img4" src="public/assets/img/header2.webp">
       </i>
     </h2>
-    
+
     <!--<h3>
       Kingdom Hall Security Plan
     </h3>-->
@@ -216,27 +215,27 @@
   </script>
   <!--desastre-minimenu-->
 
-    <!--Buscar plan-->
-    <script>
-      function search() {
-        var input, filter, table, tr, td, i;
-        input = document.getElementById("searchBar");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("table");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-          td = tr[i].getElementsByTagName("td")[1];
-          if (td) {
-            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-              tr[i].style.display = "";
-            } else {
-              tr[i].style.display = "none";
-            }
+  <!--Buscar plan-->
+  <script>
+    function search() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("searchBar");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("table");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+        if (td) {
+          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
           }
         }
       }
-    </script>
-    <!--Buscar plan-->
+    }
+  </script>
+  <!--Buscar plan-->
 </body>
 
 </html>
