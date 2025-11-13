@@ -130,43 +130,6 @@
   <script src="public/estudio2A.js" type="text/javascript"></script>
   <!-- superintendente script -->
 
-  <!--desastre-minimenu-->
-  <script TYPE="text/javascript">
-    function dropdown(mySel) {
-      var myWin, myVal;
-      myVal = mySel.options[mySel.selectedIndex].value;
-      if (myVal) {
-        if (mySel.form.target) myWin = parent[mySel.form.target];
-        else myWin = window;
-        if (!myWin) return true;
-        myWin.location = myVal;
-      }
-      return false;
-    }
-  </script>
-  <!--desastre-minimenu-->
-
-  <!--Buscar plan-->
-  <script>
-    function search() {
-      var input, filter, table, tr, td, i;
-      input = document.getElementById("searchBar");
-      filter = input.value.toUpperCase();
-      table = document.getElementById("table");
-      tr = table.getElementsByTagName("tr");
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[1];
-        if (td) {
-          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
-          }
-        }
-      }
-    }
-  </script>
-  <!--Buscar plan-->
 </body>
 
 </html>
