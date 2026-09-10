@@ -15,7 +15,7 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=16P7HwX7aspLEu1Tfw8tCWn_Dk5hNhYOXatkucRCQ3yM&usp=sharing');
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1kAb2BsLQmDCC4wf6rs11PN4L-SN81p84Ck3rmF8OY10&sheet=Pastoreo Día 2&usp=sharing&usp=sharing');
     query.setQuery('SELECT * label A "Segundo dia"');
     query.send(handleQueryResponse);
 }

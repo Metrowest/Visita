@@ -15,7 +15,7 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1blW2ClI3EqFnnMoNZiJZmyvbX5rqUxEuVtGv9ySHnlU&usp=sharing');
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1kAb2BsLQmDCC4wf6rs11PN4L-SN81p84Ck3rmF8OY10&sheet=Estudios Día 3&usp=sharing&usp=sharing');
     query.setQuery('SELECT * label A "Tercer dia"');
     query.send(handleQueryResponse);
 }

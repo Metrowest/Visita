@@ -15,7 +15,7 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1HB6fmZx-awsMD6aW7E-IzkyughjT2Tf_KB-VvSXvZ34&usp=sharing');
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1kAb2BsLQmDCC4wf6rs11PN4L-SN81p84Ck3rmF8OY10&sheet=Hospitalidad&usp=sharing&usp=sharing');
     query.setQuery('SELECT * label A "Almuerzo"');
     query.send(handleQueryResponse);
 }
