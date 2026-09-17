@@ -15,7 +15,7 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=14qcHDTTMkpctcqVIJQRLBIJMwKkSNQcXz0pEacCCU5Q&output=html&usp=sharing');
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1kAb2BsLQmDCC4wf6rs11PN4L-SN81p84Ck3rmF8OY10&sheet=Seguridad&&usp=sharing');
     query.setQuery('SELECT * label A "Kingdom Hall Security Plan"');
     query.send(handleQueryResponse);
 }
